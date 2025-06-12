@@ -20,6 +20,19 @@ It is designed to streamline the querying, rendering, filtering, and visualizati
 
 ---
 
+## 🖼️ Application Screenshots
+
+### ✅ Dashboard View Before Login
+![Dashboard View Before Login](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/Dashboard_View_Before_Login.png)
+
+### ✅ Dashboard View After Login
+![Dashboard View After Login](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/Dashboard_View_After_Login.png.png)
+
+### ✅ Dashboard Error Handlers
+![Dashboard rror Handlers](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/Error_Handling_Examples.png)
+
+---
+
 ## 🛠️ Tools & Technologies
 
 ### Backend / Model
@@ -93,6 +106,9 @@ Ensure the following tools are installed:
 5. **Install Required Python Packages**:
    ```bash
    pip install dash dash-bootstrap-components dash-leaflet pandas plotly pymongo
+
+   ### ✅ Dashboard Error Handlers
+   ![Dashboard rror Handlers](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/RequiredLibs.png)
    ```
 
 ---
