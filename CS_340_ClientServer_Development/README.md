@@ -8,7 +8,8 @@
 
 ## 📌 About the Project
 
-The **Austin Animal Center Dashboard** is a full-stack interactive application that enables users to seamlessly connect to a MongoDB database (`AAC`) and perform CRUD (Create, Read, Update, Delete) operations on the `animals` collection. This Python-based project bridges a powerful backend (MongoDB) with a dynamic, browser-based front end using the **Dash** framework.
+The **Austin Animal Center Dashboard** is a full-stack interactive application that enables users to seamlessly connect to a MongoDB database (`AAC`) and perform CRUD (Create, Read, Update, Delete) operations on the `animals` collection. This Python-based project bridges a powerful backend (MongoDB) with a dynamic, browser-based front end using the **Dash** framework. The main user interface from which the data can be queried, rendered, filtered, sorted, and visualized after successful user authentication. The front-end dashboard will enable users to search and filter the various dogs available in the database by the predefined rescue categories, using the specified criteria, and output the filtered results in an interactive and dynamic table. Additionally, the functionality will output a pie chart of all the available dog breeds and display the location of a chosen dog on a geolocation map. The application will also handle errors such as a bad connection to the database, user authentication errors, an empty database, or no search results found.
+
 
 The dashboard supports:
 - User authentication.
