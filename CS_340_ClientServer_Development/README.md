@@ -28,9 +28,6 @@ It is designed to streamline the querying, rendering, filtering, and visualizati
 ### ✅ Dashboard View After Login
 ![Dashboard View After Login](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/Dashboard_View_After_Login.png.png)
 
-### ✅ Dashboard Error Handlers
-![Dashboard rror Handlers](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/Error_Handling_Examples.png)
-
 ---
 
 ## 🛠️ Tools & Technologies
@@ -108,8 +105,8 @@ Ensure the following tools are installed:
    pip install dash dash-bootstrap-components dash-leaflet pandas plotly pymongo
 
    ### ✅ Dashboard Error Handlers
-   ![Dashboard rror Handlers](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/RequiredLibs.png)
    ```
+   ![Dashboard rror Handlers](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/RequiredLibs.png)
 
 ---
 
@@ -148,6 +145,8 @@ The application gracefully handles:
 - No records found (displays warning, hides visuals).
 - Manual filters that yield no results.
 
+### ✅ Dashboard Error Handlers
+![Dashboard rror Handlers](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/Error_Handling_Examples.png)
 ---
 
 ## 🛠️ Project Development Notes
