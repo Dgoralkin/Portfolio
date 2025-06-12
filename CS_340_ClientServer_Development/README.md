@@ -103,8 +103,6 @@ Ensure the following tools are installed:
 5. **Install Required Python Packages**:
    ```bash
    pip install dash dash-bootstrap-components dash-leaflet pandas plotly pymongo
-
-   ### ✅ Dashboard Error Handlers
    ```
    ![Dashboard rror Handlers](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/RequiredLibs.png)
 
@@ -145,7 +143,7 @@ The application gracefully handles:
 - No records found (displays warning, hides visuals).
 - Manual filters that yield no results.
 
-### ✅ Dashboard Error Handlers
+### 🪲 Dashboard Error Handlers
 ![Dashboard rror Handlers](https://github.com/Dgoralkin/Portfolio/blob/main/CS_340_ClientServer_Development/Project_2/ScreenShots/Error_Handling_Examples.png)
 ---
 
