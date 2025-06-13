@@ -27,6 +27,8 @@ It is designed to streamline the querying, rendering, filtering, and visualizati
 <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm50empubHhqN2N6YXdyNzloNm14aWNjcGgxeGxnemljeTRxMjF5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aT3HkQgHLlCrvQWmPj/giphy.gif" alt="Play it Live onrender.com" width="200">
 - Click the link to Play it Live on austinanimalcenter.com: <a href="https://austinanimalcenter-sers.onrender.com" target="_blank" rel="noopener noreferrer">Play it Live on austinanimalcenter.com</a>
 
+- ## Or, if the wheels are not spinning, watch the demo on YouTube here: (https://youtu.be/unClJHFDGLo)
+
 ---
 
 ## 🖼️ Application Screenshots
