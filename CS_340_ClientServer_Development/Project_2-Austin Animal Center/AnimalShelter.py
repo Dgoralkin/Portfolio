@@ -30,7 +30,13 @@ class AnimalShelter:
 
         # Try to authenticate a database user with predefined 'readWrite' permissions.
         try:
-            self.client = MongoClient(f"mongodb://{self.user}:{self.psswrd}@{self.host}:{self.port}/?authSource=admin")
+            # Localhost connection string:
+            # self.client = MongoClient(f"mongodb://{self.user}:{self.psswrd}@{self.host}:{self.port}/?authSource=admin")
+
+            # Atlas.Cluster0 connection string:
+            self.client = MongoClient(f"mongodb+srv://{self.user}:{self.psswrd}"
+                                      f"@cluster0.td8gcls.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+
             self.client.admin.command('ping')
             print(f"Connected to MongoDB.{self.database}.{self.collection}")
         except Exception as e:
