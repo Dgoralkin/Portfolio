@@ -50,7 +50,7 @@ namespace
 	// set the camera up vector
 	glm::vec3 gDefaultCameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
 	// set the default camera zoom level
-	const float gDefaultCameraZoom = 90.0f;
+	const float gDefaultCameraZoom = 80.0f;
 }
 
 /***********************************************************
@@ -285,7 +285,7 @@ void ViewManager::ProcessKeyboardEvents()
 		// change to orthographic projection
 		bOrthographicProjection = true;
 		// set the camera position vector
-		g_pCamera->Position = glm::vec3(1.0f, 4.45f, 10.0f);
+		g_pCamera->Position = glm::vec3(4.0f, 4.45f, 10.0f);
 		// set the camera up vector
 		g_pCamera->Up = glm::vec3(0.0f, 1.0f, 0.0f);
 		// set the camera direction vector	vector

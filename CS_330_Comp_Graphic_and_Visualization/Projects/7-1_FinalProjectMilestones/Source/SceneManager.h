@@ -116,8 +116,10 @@ public:
 	// methods for rendering the various objects in the 3D scene
 	void RenderTable();
 	void RenderBackdrop();
+	void RenderCheeseWheel();
+	void RenderBreadLoaf();
+	void RenderWineGlass();
 	void RenderJuicePitcher();
-	void RenderBook();
-	void RenderOrange();
-	void RenderPencil();
+	void RenderGrapes();
+	void RenderPlateAndKnife();
 };
