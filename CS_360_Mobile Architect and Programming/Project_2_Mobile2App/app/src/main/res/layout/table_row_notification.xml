@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This layout defines the table row item to be displayed in the recyclerview (activity_database.xml) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <!-- Set the image in the first column -->
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/product_image"
+        android:scaleType="centerInside"
+        android:padding="1dp"
+        android:src="@drawable/product_image" />
+
+    <!-- Set the text in the 2-4 columns -->
+    <TextView
+        android:id="@+id/Notification_item_name"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:padding="6dp"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <!-- Set A minus button on the left, an editable number display in the center,
+     and plus button on the right -->
+    <Button
+        android:id="@+id/Notification_btn_decrement"
+        style="@style/SubmitButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Notification_btn_decrement"
+        android:textSize="18sp"
+        android:minWidth="0dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/Notification_QTY_view"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:text="@string/Notification_edit_view_quantity"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/Notification_btn_increment"
+        style="@style/SubmitButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Notification_btn_increment"
+        android:textSize="18sp"
+        android:minWidth="0dp"
+        android:padding="8dp" />
+</LinearLayout>

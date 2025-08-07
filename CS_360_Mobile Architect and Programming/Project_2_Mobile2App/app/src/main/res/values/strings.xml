@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Mobile2App</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="welcome">"Welcome "</string>
+    <string name="invalid_username_password">Please enter valid username and password or hit the register button!</string>
+    <string name="login_failed_message">"Login Failed - Register Now!"</string>
+    <string name="register_now_button">"Register now"</string>
+    <string name="register_success_message">User successfully registered! - Please Login Now!</string>
+    <string name="register_failed_message">Please enter valid username and password!</string>
+    <string name="register_user_exists_message">User already exists in the database!</string>
+    <string name="Temp_TextView">TempLoginActivityOutput</string>
+    <string name="Temp_add_item_TextView">Error: Please fill in all fields!</string>
+
+    <!-- Strings used for bottom navigation bar -->
+    <string name="logout_bottom_bar_button">Logout</string>
+    <string name="database_bottom_bar_button">Database</string>
+    <string name="notification_bottom_bar_button">Notifications</string>
+    <string name="add_item">Add item</string>
+    <string name="fab_add_item_button">Add Item</string>
+
+    <!-- Strings used for top menu bar -->
+    <string name="settings_button">Settings</string>
+    <string name="about_button">About</string>
+
+    <!-- Strings used for the table layout in the database activity -->
+    <string name="col_1">Image</string>
+    <string name="col_2">SKU:</string>
+    <string name="col_3">Item:</string>
+    <string name="col_4">QTU:</string>
+    <string name="col_5">Edit Item</string>
+    <string name="product_image">Product Image</string>
+    <string name="delete_item_image">Delete Item</string>
+
+    <!-- Strings used for the add item layout in the add item activity -->
+    <string name="enter_sku">Enter SKU:</string>
+    <string name="enter_item_name">Enter Item Name:</string>
+    <string name="enter_item_qty">Enter Item Quantity:</string>
+    <string name="enter_quantity">Enter Quantity:</string>
+    <string name="upload_image">Take Image</string>
+    <string name="sku_exist_error">This SKU already exists in the database!</string>
+    <string name="add_item_error">Can not add item to the database!</string>
+
+    <!-- Strings used for the SMS notification layout in the notification activity -->
+    <string name="sms_permission_not_granted">SMS permission status:</string>
+    <string name="enable_sms_notifications">Send Low Inventory Report</string>
+    <string name="sms_permission_already_granted">SMS permission already granted.</string>
+    <string name="sms_permission_granted">SMS permission granted</string>
+    <string name="sms_permission_denied">SMS permission denied</string>
+    <string name="Notification_btn_decrement">−</string>
+    <string name="Notification_btn_increment">+</string>
+    <string name="Notification_edit_view_quantity">1</string>
+    <string name="Minimum_QTY_allowed">Min QTY allowed</string>
+
+</resources>

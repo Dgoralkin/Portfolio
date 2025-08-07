@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Define the view for the bottom navigation bar from the res/color/nav_item_color.xml file -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/nav_login"
+        android:icon="@android:drawable/ic_lock_lock"
+        android:title="@string/logout_bottom_bar_button" />
+
+    <item
+        android:id="@+id/nav_database"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/database_bottom_bar_button" />
+
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/notification_bottom_bar_button" />
+</menu>

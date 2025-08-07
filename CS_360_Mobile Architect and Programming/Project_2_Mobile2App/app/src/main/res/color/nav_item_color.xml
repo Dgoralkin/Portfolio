@@ -1,0 +1,5 @@
+<!-- Customized styling for the bottom navigation bar -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/steel_blue" android:state_checked="true" />
+    <item android:color="@android:color/darker_gray" android:state_checked="false" />
+</selector>

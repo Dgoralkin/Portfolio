@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Set required permissions to send notifications -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Set required permissions to send SMS messages -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Set required permissions to access camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Update Google Play with the required features -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/mobile2app_banner"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dg"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mobile2App">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Mobile2App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DatabaseActivity"
+            android:exported="false"
+            android:label="@string/database_bottom_bar_button"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.Mobile2App">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".AddItemActivity"
+            android:exported="false"
+            android:label="@string/add_item"
+            android:parentActivityName=".DatabaseActivity"
+            android:theme="@style/Theme.Mobile2App">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DatabaseActivity" />
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false"
+            android:label="@string/notification_bottom_bar_button"
+            android:parentActivityName=".DatabaseActivity"
+            android:theme="@style/Theme.Mobile2App">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DatabaseActivity" />
+        </activity>
+
+        <!-- Grant Uri Permissions for reading and storing files -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.zybooks.mobile2app.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

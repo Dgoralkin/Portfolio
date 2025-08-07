@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addItemToDatabase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_margin="5dp"
+    tools:context=".AddItemActivity">
+
+    <!-- Top menu action bar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/database_bottom_bar_button"
+        android:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/back_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- EditText input fields to read item data -->
+    <EditText
+        android:id="@+id/addUsername"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:autofillHints="Enter item SKU"
+        android:hint="@string/enter_sku"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addItemName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_item_name"
+        android:autofillHints="Enter Item Name"
+        android:imeActionLabel="@string/enter_item_name"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addUsername" />
+
+    <!-- EditText to input item quantity -->
+    <EditText
+        android:id="@+id/addItemQuantity"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="number"
+        android:hint="@string/enter_quantity"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addItemName" />
+
+    <!-- TODO: android:onClick="DoSomeThingClick" -->
+    <!-- Upload Image Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadImageButton"
+        style="@style/SubmitButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/upload_image"
+        app:layout_constraintTop_toBottomOf="@id/addItemQuantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Text View to appear below the addItemQuantity EditText -->
+    <TextView
+        android:id="@+id/addItemTempTextOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="20dp"
+        android:text="@string/Temp_add_item_TextView"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/uploadImageButton"
+        app:layout_constraintBottom_toTopOf="@id/addItemButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Add Item Button will be enabled when all fields are filled
+     and forward the data to the DatabaseActivity.Java to be added to the database-->
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:text="@string/add_item"
+        app:layout_constraintTop_toBottomOf="@id/uploadImageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <!-- Bottom navigation bar - Defined in res/menu/bottom_nav_menu.xml -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- FAB Button add item - Defined in res/drawable.xml -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/fab_add_item_button"
+        android:src="@drawable/add_item"
+        app:tint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
