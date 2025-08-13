@@ -23,7 +23,7 @@ All objects are constructed from basic 3D shapes such as boxes, cones, cylinders
 ---
 
 ## 🖼 Screenshots
-| Scene View | Orthographic View | Perspective View |
+| Scene View | Perspective View | Orthographic View |
 |------------|-----------------|-----------------|
 | ![Screenshot 1](https://github.com/Dgoralkin/Portfolio/blob/main/CS_330_Comp_Graphic_and_Visualization/Screenshots/Screenshot_1.png) | ![Screenshot 2](https://github.com/Dgoralkin/Portfolio/blob/main/CS_330_Comp_Graphic_and_Visualization/Screenshots/Screenshot_3.png) | ![Screenshot 3](https://github.com/Dgoralkin/Portfolio/blob/main/CS_330_Comp_Graphic_and_Visualization/Screenshots/Screenshot_2.png) |
 
@@ -64,3 +64,14 @@ All objects are constructed from basic 3D shapes such as boxes, cones, cylinders
 ---
 
 ## 📂 File Structure
+📦 Project
+┣ 📂 src
+┃ ┣ ShapeMeshes.cpp
+┃ ┣ SceneManager.cpp
+┃ ┣ ViewManager.cpp
+┃ ┣ ShaderManager.cpp
+┃ ┗ main.cpp
+┣ 📂 shaders
+┣ 📂 textures
+┣ 📂 screenshots
+┗ README.md
