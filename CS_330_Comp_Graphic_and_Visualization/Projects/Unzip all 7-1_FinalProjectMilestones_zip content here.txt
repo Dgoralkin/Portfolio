@@ -1,0 +1,1 @@
+Unzip all 7-1_FinalProjectMilestones_zip content directly into the this folder. Store all unzipped data in the 7-1_FinalProjectMilestones folder.

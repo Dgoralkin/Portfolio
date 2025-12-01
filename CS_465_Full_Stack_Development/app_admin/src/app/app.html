@@ -1,0 +1,19 @@
+<!-- * * * * * * * * * * Template (HTML view) for the root AppComponent * * * * * * * * * * -->
+
+
+<!-- Display page header data as h1
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+         href="#" turn {{ title() }} into a hotlink to our admin page.
+    <a class="navbar-brand" href="#">{{ title }}</a>
+  </div>
+</nav>-->
+
+<!-- Angular selector for our navbar -->
+<app-navbar></app-navbar>
+
+<!-- Pull data from the app-trip-listing components (trip-listing.ts) or through the router outlet -->
+<div class="container">
+      <!--  <app-trip-listing></app-trip-listing>  -->
+      <router-outlet></router-outlet>
+</div>

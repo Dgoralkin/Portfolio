@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style for the custom button -->
+    <style name="SubmitButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/steel_blue</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:padding">6dp</item>
+        <item name="cornerRadius">16dp</item> <!-- This works with MaterialButton -->
+    </style>
+</resources>

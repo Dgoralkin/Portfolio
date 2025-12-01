@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/images/TravlrGetawaysLogo.png" alt="Travlr Getaways">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse navbar-toggler" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="">HOME<span class="sr-only"></span></a>
+    </div>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="">TRAVEL<span class="sr-only"></span></a>
+    </div>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="">ROOMS<span class="sr-only"></span></a>
+    </div>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="">MEALS<span class="sr-only"></span></a>
+    </div>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="">NEWS<span class="sr-only"></span></a>
+    </div>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="">ABOUT<span class="sr-only"></span></a>
+    </div>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="">CONTACT<span class="sr-only"></span></a>
+    </div>
+
+    <div class="navbar-nav ms-auto">
+      <a class="btn btn-primary w-100 py-2 fw-semibold" routerLink="login" *ngIf="!isLoggedIn()">Log In</a>
+      <a class="btn btn-primary w-100 py-2 fw-semibold" (click)="onLogout()" *ngIf="isLoggedIn()">Log Out</a>
+    </div>
+  </div>
+</nav>

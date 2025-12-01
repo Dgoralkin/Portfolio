@@ -1,0 +1,28 @@
+{
+    "heading": "Enjoy the Summer with Us!",
+    "heading_text": "This website template has been designed by <a href=\"http://www.freewebsitetemplates.com/\">Free Website Templates</a> for you for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href=\"http://www.freewebsitetemplates.com/forums/\">Forum</a>.",
+
+    "Latest_Blog": "Latest Blog",
+    "Blog_Entries": [
+        {
+            "title": "2023 Best Beaches Contest Winners",
+            "link": "news",
+            "date": "April 02, 2023",
+            "excerpt": "Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat. Nunc nisi mi, elementum sit amet..."
+        },
+        {
+            "title": "Top 10 Diving Spots",
+            "link": "news",
+            "date": "May 29, 2023",
+            "excerpt": "Maecenas scelerisque odio quis arcu fringilla malesuada. Nulla facilisi. In libero nulla, fermentum ut pretium ac, pharetra et eros..."
+        }
+    ],
+    "Testimonials_Heading": "Testimonials",
+    "Testimonials": [
+        {
+            "text": "In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor. Quisque nec nunc ac mi ultrices iaculis. Aenean quis elit mauris, nec vestibulum lorem.",
+            "author": "Daniel Gorelkin",
+            "link": "/"
+        }
+    ]
+}

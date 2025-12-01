@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This layout defines the table row item to be displayed in the recyclerview (activity_database.xml) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <!-- Set the image in the first column -->
+    <ImageView
+        android:id="@+id/col1_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/product_image"
+        android:scaleType="centerInside"
+        android:padding="1dp"
+        android:src="@drawable/product_image" />
+
+    <!-- Set the text in the 2-4 columns -->
+    <TextView android:id="@+id/col2" android:layout_width="75dp" android:layout_weight="1" android:layout_height="50dp" android:gravity="center" android:textAlignment="center"/>
+    <TextView android:id="@+id/col3" android:layout_width="75dp" android:layout_weight="1" android:layout_height="50dp" android:gravity="center" android:textAlignment="center"/>
+    <TextView android:id="@+id/col4" android:layout_width="50dp" android:layout_weight="1" android:layout_height="50dp" android:gravity="center" android:textAlignment="center"/>
+
+    <!-- Set the delete icon in the last column -->
+    <ImageView
+        android:id="@+id/delete_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/delete_item_image"
+        android:scaleType="centerInside"
+        android:padding="10dp"
+        android:src="@drawable/delete_item" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+	{{> head }}
+	<body>
+		<div id="background">
+			<div id="page">
+				<!-- Set handlebars to fetch HTML from ./partials/header.hbs -->
+				{{> header }}
+				<div id="contents">
+					<div class="box">
+						<div>
+							<div class="body">
+								<h1>Meals</h1>
+								<ul id="foods">
+									<!-- Loop to parse passed data through controllers res, from the meals.json file -->
+									{{#each meals_data}}
+									<li>
+										<h2><a href="/api/meals/{{this.meal}}">{{meal}}</a></h2>
+										<div class="infos">
+											<a href="/api/meals/{{this.meal}}"><img src="images/{{image}}" alt="Img" height="169" width="780"><span class="cover"></span></a>
+											<p>
+												{{{description}}}
+											</p>
+										</div>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Set handlebars to fetch HTML from ./partials/footer.hbs -->
+			{{> footer }}
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- This is the handelbars page that holds the handlebar for the html headers pages -- >
+<!-- header -->
+<div id="header">
+    <div id="logo">
+    <a href="/"><img src="images/TravlrGetawaysLogo.png" alt="LOGO" height="100" width="200"/></a>
+    </div>
+    <div id="navigation">
+        <ul>
+            <!-- Upate the class with the "selected" style -->
+            <li class="{{#if (eq currentPage '/')}}selected{{/if}}">
+                <a href="/">Home</a>
+            </li>
+            <li class="{{#if (eq currentPage 'travel')}}selected{{/if}}">
+                <a href="/travel">Travel</a>
+            </li>
+            <li class="{{#if (eq currentPage 'rooms')}}selected{{/if}}">
+                <a href="/rooms">Rooms</a>
+            </li>
+            <li class="{{#if (eq currentPage 'meals')}}selected{{/if}}">
+                <a href="/meals">Meals</a>
+            </li>
+            <li class="{{#if (eq currentPage 'news')}}selected{{/if}}">
+                <a href="/news">News</a>
+            </li>
+            <li class="{{#if (eq currentPage 'about')}}selected{{/if}}">
+                <a href="/about">About</a>
+            </li>
+            <li class="{{#if (eq currentPage 'contact')}}selected{{/if}}">
+                <a href="/contact">Contact</a>
+            </li>
+            <li class="admin-link">
+                <a href="http://localhost:4200/login" target="_blank">Admin Login</a>
+            </li>
+        </ul>
+    </div>
+</div>

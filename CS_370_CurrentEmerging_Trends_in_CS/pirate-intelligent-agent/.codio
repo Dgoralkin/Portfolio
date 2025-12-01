@@ -1,0 +1,9 @@
+{
+// Configure your Run and Preview buttons here.
+
+
+// Preview button configuration
+  "preview": {
+        "Jupyter Notebook": "https://{{domain3000}}/"
+  }
+}

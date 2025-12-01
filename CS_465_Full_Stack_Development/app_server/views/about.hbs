@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+	{{> head }}
+	<body>
+		<div id="background">
+			<div id="page">
+				<!-- Set handlebars to fetch HTML from ./partials/header.hbs -->
+				{{> header }}
+				<div id="contents">
+					<div class="box">
+						<div>
+							<div class="body">
+								<h1>About Us</h1>
+								<h2>We Have Free Templates for Everyone</h2>
+								<p>{{{ about_us.content.paragraph_1 }}}</p>
+								<p>{{{ about_us.content.paragraph_2 }}}</p>
+								<hr>
+								<div class="ads">
+									<h2>Our Crews</h2>
+									<p>{{{ about_us.crews }}}</p>
+									<h2>Amenities</h2>
+									<p>{{{ about_us.amenities }}}</p>
+								</div>
+								<h2>Be Part of Our Community</h2>
+								<p>{{{ about_us.community }}}</p>
+								<h2>Template details</h2>
+								<p>{{{ about_us.details }}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Set handlebars to fetch HTML from ./partials/footer.hbs -->
+			{{> footer }}
+		</div>
+	</body>
+</html>

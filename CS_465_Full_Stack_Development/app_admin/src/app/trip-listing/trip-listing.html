@@ -1,0 +1,32 @@
+<!-- <pre>{{ trips | json }}</pre> -->
+
+<!-- button to add new trips to the database via api calls -->
+<div *ngIf="isLoggedIn()">
+    <button (click)="addTrip()" class="btn btn-info">Add Trip</button>
+    <p></p>
+</div>
+
+<!-- Render all awailable trips from the trip list @ trip-listong.ts / from '../data/trips' -->
+<div class="row">
+    <!-- Angular for-loop -->
+    <div *ngFor="let trip of trips" class="col-md-4">
+
+        <!-- This section is replaced with the individual trip content from  trip-card.html file:
+        <div class="card ml-4" style="width: 18rem;">
+            // Access individual components from the trip list. 
+            <div class="card-header">{{ trip.name }}</div>
+            <img src="assets/images/{{ trip.image }}" alt="trip thumbnail" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted"> {{ trip.resort }} </h6>
+                // Angular ‘pipe’ allows customization of data formats 
+                <p class="card-subtitle mt-3 mb-3 text-muted"> {{trip.length}} only {{trip.perPerson|currency:'USD':true}} per person </p>
+                // Escape the inner embedded HTML tags
+                <p class="card-text" [innerHTML]="trip.description"> </p>
+            </div>
+        </div>-->
+
+        <!-- Fetch trip data from ../trip-card/trip-card.ts -->
+        <app-trip-card [trip]="trip" class="card-deck mt-2"></app-trip-card>
+
+    </div>
+</div>

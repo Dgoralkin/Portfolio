@@ -1,0 +1,35 @@
+// This file will hold the trips in a JSON format
+
+export const trips = [
+    {
+        "code" : "GALR210214",
+        "name" : "Gale Reef",
+        "length" : "4 nights / 5 days",
+        "start" : "2025-09-15T08:00:00Z",
+        "resort" : "Emerald Bay, 3 stars",
+        "perPerson" : "799.00",
+        "image" : "reef1.jpg",
+        "description" : "Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.",
+        "description_details" : "Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet."
+    } , {
+        "code" : "DAWR210315",
+        "name" : "Dawson's Reef",
+        "length" : "4 nights / 5 days",
+        "start" : "2025-09-16T08:00:00Z",
+        "resort" : "Blue Lagoon, 4 stars",
+        "perPerson" : "1199.00",
+        "image" : "reef2.jpg",
+        "description" : "Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat. Nunc nisi mi, elementum sit amet aliquet quis, tristique quis nisl. Curabitur odio lacus, blandit ut hendrerit",
+        "description_details" : "vulputate, vulputate at est. Morbi aliquet viverra metus eu consectetur. In lorem dui, elementum sit amet convallis ac, tincidunt vel sapien."  
+    } , {
+        "code" : "CLAR210621",
+        "name" : "Claire's REEF",
+        "length" : "4 nights / 5 days",
+        "start" : "2025-09-17T08:00:00Z",
+        "resort" : "Coral Sands, 5 stars",
+        "perPerson" : "1999.00",
+        "image" : "reef3.jpg",
+        "description" : "Donec sed felis risus. Nulla facilisi. Donec a orci tellus, et auctor odio. Fusce ac orci nibh, quis semper arcu. Cras orci neque, euismod et accumsan ac, sagittis molestie lorem. Proin odio sapien, elementum at tempor non.",
+        "description_details" : "Vulputate eget libero. In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor. Quisque nec nunc ac mi ultrices iaculis."
+    }
+];

@@ -1,0 +1,20 @@
+<!-- res/menu/appbar_menu.xml -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Define the menu items -->
+    <item android:id="@+id/action_add"
+        android:title="@string/app_name"
+        android:icon="@drawable/dg"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menu_bar_settings_button"
+        android:title="@string/settings_button"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_bar_about_button"
+        android:title="@string/about_button"
+        app:showAsAction="never"/>
+
+</menu>

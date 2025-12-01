@@ -1,0 +1,7 @@
+setup.py
+AnimalShelter/AnimalShelter.py
+AnimalShelter.egg-info/PKG-INFO
+AnimalShelter.egg-info/SOURCES.txt
+AnimalShelter.egg-info/dependency_links.txt
+AnimalShelter.egg-info/requires.txt
+AnimalShelter.egg-info/top_level.txt

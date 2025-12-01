@@ -1,0 +1,58 @@
+<!-- This is the handelbars page that holds the handlebar for the html footer pages -- >
+<!-- footer -->
+<div id="footer">
+    <div>
+        <ul class="navigation">
+            <li class="{{#if (eq currentPage '/')}}active{{/if}}">
+                <a href="/">Home</a>
+            </li>
+            <li class="{{#if (eq currentPage 'travel')}}active{{/if}}">
+                <a href="/travel">Travel</a>
+            </li>
+            <li class="{{#if (eq currentPage 'rooms')}}active{{/if}}">
+                <a href="/rooms">Rooms</a>
+            </li>
+            <li class="{{#if (eq currentPage 'meals')}}active{{/if}}">
+                <a href="/meals">Meals</a>
+            </li>
+            <li class="{{#if (eq currentPage 'news')}}active{{/if}}">
+                <a href="/news">News</a>
+            </li>
+            <li class="{{#if (eq currentPage 'about')}}active{{/if}}">
+                <a href="/about">About</a>
+            </li>
+            <li class="{{#if (eq currentPage 'contact')}}active{{/if}}">
+                <a href="/contact">Contact</a>
+            </li>
+        </ul>
+        <div id="connect">
+        <a
+            href="http://pinterest.com/fwtemplates/"
+            target="_blank"
+            class="pinterest"
+        ></a>
+        <a
+            href="http://freewebsitetemplates.com/go/facebook/"
+            target="_blank"
+            class="facebook"
+        ></a>
+        <a
+            href="http://freewebsitetemplates.com/go/twitter/"
+            target="_blank"
+            class="twitter"
+        ></a>
+        <a
+            href="http://freewebsitetemplates.com/go/googleplus/"
+            target="_blank"
+            class="googleplus"
+        ></a>
+        </div>
+    </div>
+    <p style="line-height: 1.2; margin: 0;">
+    © 2025 by Travlr Getaways and Daniel Gorelkin. All Rights Reserved<br>
+    Try it live @ 
+    <a href="https://cs-465-full-stack-development.onrender.com" target="_blank" style="text-decoration: underline; color: blue;">
+        cs-465-full-stack-development.onrender.com
+    </a>
+    </p>
+</div>

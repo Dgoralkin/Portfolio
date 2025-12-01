@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+	{{> head }}
+	<body>
+		<div id="background">
+			<div id="page">
+				<!-- Set handlebars to fetch HTML from ./partials/header.hbs -->
+				{{> header }}
+				<div id="contents">
+					<div class="box">
+						<div>
+							<div id="contact" class="body">
+								<h1>Contact Us</h1>
+								<!-- Send the form directly to the API via x-www-form-urlencoded body → req.body -->
+								<form action="/api/contact" method="post">
+								<table>
+									<tbody>
+									<tr>
+										<td>Name:</td>
+										<td><input type="text" name="name" class="txtfield"></td>
+									</tr>
+									<tr>
+										<td>Email:</td>
+										<td><input type="text" name="email" class="txtfield"></td>
+									</tr>
+									<tr>
+										<td>Subject:</td>
+										<td><input type="text" name="subject" class="txtfield"></td>
+									</tr>
+									<tr>
+										<td class="txtarea">Message:</td>
+										<td><textarea name="message"></textarea></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><input type="submit" value="" class="btn"></td>
+									</tr>
+									</tbody>
+								</table>
+								</form>
+
+								<h2>{{ contact_data.Company_name }}</h2>
+								<p>
+									{{ contact_data.Address }}
+								</p>
+								<p>
+									{{ contact_data.Telephone }}
+								</p>
+								<p>
+									{{ contact_data.Email }}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Set handlebars to fetch HTML from ./partials/footer.hbs -->
+			{{> footer }}
+		</div>
+	</body>
+</html>
